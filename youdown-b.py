@@ -21,7 +21,7 @@ print("-Programado por:", WHITE+"Balta\n")
 print("1)Descargar Video\n"
       "2)Salir")
 
-opcion = int(input(RED+"-> Selecione: "))
+opcion = int(input(RED+"-> Seleccione: "))
 
 if opcion == 1:
     urlv = input(RED + "\n-> Introduzca la URL del video: ")
