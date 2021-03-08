@@ -1,4 +1,11 @@
 from pytube import YouTube
+from tqdm import tqdm
+
+loop = tqdm(total = 30000, position=0, leave=False)
+for k in range(30000):
+    loop.set_description('Abriendo Programa'.format(k))
+    loop.update(1)
+loop.close()
 
 RED = '\033[31m'
 WHITE = '\033[37m'
