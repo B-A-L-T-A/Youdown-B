@@ -6,7 +6,7 @@ import os
 
 loop = tqdm(total = 50000, position=0, leave=False)
 for k in range(50000):
-    loop.set_description(Fore.YELLOW + '\n(･ิᴗ･ิ) Ejecutando script'.format(k))
+    loop.set_description(Fore.YELLOW + '(･ิᴗ･ิ) Ejecutando script'.format(k))
     loop.update(1)
 loop.close()
 
