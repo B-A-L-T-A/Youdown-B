@@ -33,8 +33,12 @@ while True:
     print(Fore.MAGENTA + "a", end="")
 
     url = input(Fore.YELLOW + "\n>>> Enter the URL of the video: ")
+    
     print("\n(･ิᴗ･ิ)", "Downloading Video...")
+    
     YouTube(url).streams.get_highest_resolution().download()
     YouTube(url).streams.first().download()
+    
     print("\n( ^-^)/", "¡Your video has been downloaded successfully!")
+    
     time.sleep(4)
